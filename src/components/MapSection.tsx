@@ -52,20 +52,38 @@ const MapSection = () => {
       const dy = e.touches[0].clientY - e.touches[1].clientY;
       setPinchStartDist(Math.hypot(dx, dy));
       setBaseScale(scale);
+    } else if (e.touches.length === 1) {
+      // single-finger pan start
+      setIsDragging(true);
+      setDragStart({
+        x: e.touches[0].clientX - position.x,
+        y: e.touches[0].clientY - position.y,
+      });
     }
   };
   const handleTouchMove = (e: React.TouchEvent) => {
     if (e.touches.length === 2 && pinchStartDist) {
+      // pinch to zoom
       const dx = e.touches[0].clientX - e.touches[1].clientX;
       const dy = e.touches[0].clientY - e.touches[1].clientY;
       const newDist = Math.hypot(dx, dy);
       const newScale = baseScale * (newDist / pinchStartDist);
       setScale(Math.min(Math.max(newScale, 0.5), 3));
+    } else if (e.touches.length === 1 && isDragging) {
+      // single-finger pan
+      setPosition({
+        x: e.touches[0].clientX - dragStart.x,
+        y: e.touches[0].clientY - dragStart.y,
+      });
     }
   };
   const handleTouchEnd = (e: React.TouchEvent) => {
     if (e.touches.length < 2) {
       setPinchStartDist(null);
+    }
+    if (e.touches.length === 0) {
+      // end pan
+      setIsDragging(false);
     }
   };
 

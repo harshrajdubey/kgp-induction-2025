@@ -60,10 +60,6 @@ const Footer = () => {
                 <MapPin className='w-4 h-4 mr-2 text-iit-gold' />
                 <span>Kharagpur, West Bengal 721302, India</span>
               </div>
-              <div className='flex items-center'>
-                <Phone className='w-4 h-4 mr-2 text-iit-gold' />
-                <span>+91 3222 282060</span>
-              </div>
             </div>
           </div>
 
