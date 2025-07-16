@@ -19,16 +19,16 @@ const Index = () => {
   return (
     <div className='min-h-screen'>
       <Header />
-      <HeroSection />
-      <div className='w-full bg-iit-blue py-2 flex items-center overflow-hidden min-h-[44px]'>
+      <div className='w-full bg-iit-blue mt-20 flex items-center overflow-hidden min-h-[44px]'>
         <marquee
           behavior='scroll'
           direction='left'
           scrollamount='7'
           className='text-white text-base font-semibold tracking-wide'>
-          Freshers must report to Netaji Auditorium by 9:00 AM on 25th July 2025 for the Welcome Ceremony.
+          Freshers must report to Netaji Auditorium by 9:00 AM on 19th July 2025 for the Welcome Ceremony.
         </marquee>
       </div>
+      <HeroSection />
       <CountdownSection />
       <AboutSection />
       <ActivitiesSection />

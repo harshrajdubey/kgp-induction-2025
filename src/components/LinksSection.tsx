@@ -1,7 +1,14 @@
-import { FileText, Bus, Map, Globe, Users, BookOpen, Heart, ExternalLink } from "lucide-react";
+import { FileText, Bus, Map, Globe, Users, BookOpen, Backpack, Heart, ExternalLink } from "lucide-react";
 
 const LinksSection = () => {
   const links = [
+    {
+      icon: Users,
+      title: "Technology Students' Gymkhana",
+      description: "Technology Students' Gymkhana official portal",
+      url: "https://gymkhana.iitkgp.ac.in/",
+      color: "bg-primary",
+    },
     {
       icon: FileText,
       title: "Induction Handbook",
@@ -13,14 +20,14 @@ const LinksSection = () => {
       icon: Bus,
       title: "Bus Schedule",
       description: "Transportation timetables and routes within campus",
-      url: "#",
+      url: "/docs/welcome freshers slots (3).pdf",
       color: "bg-primary",
     },
     {
       icon: Map,
       title: "Campus Map",
       description: "Interactive map of Indian Institute of Technology Kharagpur campus with all locations",
-      url: "#",
+      url: "http://www.rajbhasha.iitkgp.ac.in/download/20150215082923.jpg",
       color: "bg-primary",
     },
     {
@@ -45,17 +52,17 @@ const LinksSection = () => {
       color: "bg-primary",
     },
     {
-      icon: Users,
-      title: "Technology Students' Gymkhana",
-      description: "Technology Students' Gymkhana official portal",
-      url: "https://gymkhana.iitkgp.ac.in/",
-      color: "bg-primary",
-    },
-    {
       icon: Heart,
       title: "SARTH",
       description: "Mental health and counselling services for students",
       url: "https://sarth.iitkgp.ac.in/",
+      color: "bg-primary",
+    },
+    {
+      icon: Backpack,
+      title: "Campus Tour",
+      description: "Mental health and counselling services for students",
+      url: "/docs/Campus Tour _ SWG.pdf",
       color: "bg-primary",
     },
   ];
@@ -79,7 +86,8 @@ const LinksSection = () => {
               <a
                 key={index}
                 href={link.url}
-                target={link.url.startsWith("http") ? "_blank" : "_self"}
+                // target={link.url.startsWith("http") ? "_blank" : "_self"}
+                target={"_blank"}
                 rel={link.url.startsWith("http") ? "noopener noreferrer" : ""}
                 className='iit-card p-6 group cursor-pointer animate-slide-up hover:scale-105 transition-all duration-300'
                 style={{ animationDelay: `${index * 0.05}s` }}>

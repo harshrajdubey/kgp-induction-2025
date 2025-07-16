@@ -19,22 +19,22 @@ const ContactSection = () => {
 
   const officials = [
     {
-      title: "General Secretary (Male), Student Welfare",
+      title: "Vice President, Technology Students' Gymkhana",
+      name: "Sudhagani Praneeth Kumar",
+      email: "vptsg@hijli.iitkgp.ac.in",
+      phone: "+91 7416449233",
+    },
+    {
+      title: "General Secretary, Student Welfare",
       name: "Tanush Agarwal",
       email: "gsectsg-welfare@hijli.iitkgp.ac.in",
       phone: "+91 8309300581",
     },
     {
-      title: "General Secretary (Female), Student Welfare",
+      title: "General Secretary, Student Welfare",
       name: "Dnyaneshwari Ghare",
       email: "gsectsg-welfare@hijli.iitkgp.ac.in",
       phone: "+91 7499306778",
-    },
-    {
-      title: "Vice President, Technology Students' Gymkhana",
-      name: "Sudhagani Praneeth Kumar",
-      email: "vptsg@hijli.iitkgp.ac.in",
-      phone: "+91 7416449233",
     },
   ];
 
@@ -54,11 +54,12 @@ const ContactSection = () => {
           </div>
 
           {/* Main Contact Cards */}
-          <div className='grid md:grid-cols-2 gap-8 mb-12'>
+          {/* <div className='grid md:grid-cols-1 gap-8 mb-12'> */}
+          <div className='flex justify-center mb-12'>
             {/* Help Desk */}
 
             {/* Emergency Contact */}
-            <div className='iit-card p-8 border-l-4 border-red-500'>
+            <div className='iit-card p-8 pl-12 border-l-4 border-red-500 w-full max-w-3xl'>
               <div className='flex items-center mb-6'>
                 <div className='w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mr-4'>
                   <Phone className='w-6 h-6 text-white' />
@@ -91,7 +92,7 @@ const ContactSection = () => {
               </div>
             </div>
 
-            <div className='iit-card p-8 border-l-4 border-iit-blue'>
+            {/* <div className='iit-card p-8 border-l-4 border-iit-blue'>
               <div className='flex items-center mb-6'>
                 <div className='w-12 h-12 bg-iit-blue rounded-lg flex items-center justify-center mr-4'>
                   <Shield className='w-6 h-6 text-white' />
@@ -119,21 +120,18 @@ const ContactSection = () => {
                   <span className='text-iit-blue/80'>03222-283312 (Women Students' Council)</span>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Volunteer Contacts */}
-          <div className='mb-12'>
+          {/* <div className='mb-12'>
             <h3 className='text-2xl  font-bold text-iit-blue mb-6 text-center'>PG/RS Volunteers Contacts</h3>
-
-            {/* Desktop Table */}
-            <div className='hidden md:block overflow-x-auto'>
-              <table className='w-full bg-white rounded-xl shadow-lg overflow-hidden'>
+            <div className='hidden md:flex justify-center overflow-x-auto '>
+              <table className=' bg-white rounded-xl shadow-lg overflow-hidden w-full max-w-3xl'>
                 <thead className='bg-iit-blue text-white'>
                   <tr>
-                    <th className='px-6 py-4 text-left  font-bold'>Name</th>
+                    <th className='px-6 py-4 text-left font-bold'>Name</th>
                     <th className='px-6 py-4 text-left  font-bold'>Phone</th>
-                    <th className='px-6 py-4 text-left  font-bold'>Role</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -155,29 +153,25 @@ const ContactSection = () => {
                           <span className='text-iit-blue/80'>{volunteer.phone}</span>
                         </div>
                       </td>
-                      <td className='px-6 py-4 text-iit-blue/80'>{volunteer.role}</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            {/* Mobile Cards */}
             <div className='md:hidden space-y-4'>
               {volunteers.map((volunteer, index) => (
                 <div key={index} className='iit-card p-4'>
                   <div className='flex items-center justify-between mb-2'>
                     <span className='font-semibold text-iit-blue'>{volunteer.name}</span>
-                    <span className='text-xs text-iit-blue/60'>{volunteer.role}</span>
                   </div>
                   <div className='flex items-center justify-between'>
                     <span className='text-sm text-iit-blue/80'>{volunteer.phone}</span>
-                    <span className='text-xs text-iit-blue/60'>{volunteer.role}</span>
                   </div>
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Officials Contact */}
           <div>

@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Youtube, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import logoWhite from "@/assets/iitlogowhite.png";
 
 const Footer = () => {
   const quickLinks = ["Home", "About", "Schedule", "Activities", "Contact"];
@@ -40,8 +41,8 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className='md:col-span-2'>
             <div className='flex items-center space-x-4 mb-6'>
-              <div className='w-16 h-16 bg-white rounded-full flex items-center justify-center'>
-                <span className='text-iit-blue font-bold text-xl'>IIT</span>
+              <div className='w-16 h-16'>
+                <img src={logoWhite} alt='IIT KGP Logo' className='w-full h-full object-contain' />
               </div>
               <div>
                 <h3 className='text-2xl font-heading font-bold uppercase'>Induction 2025</h3>
@@ -61,11 +62,7 @@ const Footer = () => {
               </div>
               <div className='flex items-center'>
                 <Phone className='w-4 h-4 mr-2 text-iit-gold' />
-                <span>+91 3222 282020</span>
-              </div>
-              <div className='flex items-center'>
-                <Mail className='w-4 h-4 mr-2 text-iit-gold' />
-                <span>induction2025@iitkgp.ac.in</span>
+                <span>+91 3222 282060</span>
               </div>
             </div>
           </div>
@@ -98,7 +95,7 @@ const Footer = () => {
             <div className='space-y-4'>
               <div>
                 <p className='text-iit-gold font-semibold'>Induction Program</p>
-                <p className='text-white/80 text-sm'>July 25-28, 2025</p>
+                <p className='text-white/80 text-sm'>July 19-20, 2025</p>
               </div>
               <div>
                 <p className='text-iit-gold font-semibold'>Program Venue</p>
