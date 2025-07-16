@@ -11,14 +11,14 @@ const HeroSection = () => {
   const slides = [
     {
       image:
-        "https://images.unsplash.com/photo-1620496009285-ac853df7b9b6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aWl0JTIwa2hhcmFncHVyfGVufDB8fDB8fHww",
+        "https://images.unsplash.com/photo-1620496009285-ac853df7b9b6?fm=jpg&q=60&w=1920&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aWl0JTIwa2hhcmFncHVyfGVufDB8fDB8fHww",
       title: "Welcome to IIT Kharagpur",
       subtitle: "Induction Program 2025",
     },
     {
       image: "https://www.iitkgpfoundation.org/images/vault/2998.jpg",
       title: "Begin Your Journey",
-      subtitle: "25th July 2025",
+      subtitle: "19th July 2025",
     },
     {
       image: "https://images.indianexpress.com/2024/12/IIT-Kharagpur-3.jpg",
@@ -51,7 +51,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className='relative h-screen flex items-center justify-center hero-gradient pt-20'>
+    <section className='relative h-[calc(100vh-7rem)] flex items-center justify-center hero-gradient pt-20'>
       {/* Background Carousel */}
       <div className='absolute inset-0 overflow-hidden'>
         {slides.map((slide, index) => (

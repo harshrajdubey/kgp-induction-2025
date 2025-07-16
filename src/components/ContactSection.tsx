@@ -124,18 +124,14 @@ const ContactSection = () => {
           </div>
 
           {/* Volunteer Contacts */}
-          <div className='mb-12'>
+          {/* <div className='mb-12'>
             <h3 className='text-2xl  font-bold text-iit-blue mb-6 text-center'>PG/RS Volunteers Contacts</h3>
-
-            {/* Desktop Table */}
-            
             <div className='hidden md:flex justify-center overflow-x-auto '>
               <table className=' bg-white rounded-xl shadow-lg overflow-hidden w-full max-w-3xl'>
                 <thead className='bg-iit-blue text-white'>
                   <tr>
-                    <th className='px-6 py-4 text-left  font-bold'>Name</th>
+                    <th className='px-6 py-4 text-left font-bold'>Name</th>
                     <th className='px-6 py-4 text-left  font-bold'>Phone</th>
-                    {/* <th className='px-6 py-4 text-left  font-bold'>Role</th> */}
                   </tr>
                 </thead>
                 <tbody>
@@ -157,29 +153,25 @@ const ContactSection = () => {
                           <span className='text-iit-blue/80'>{volunteer.phone}</span>
                         </div>
                       </td>
-                      {/* <td className='px-6 py-4 text-iit-blue/80'>{volunteer.role}</td> */}
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
 
-            {/* Mobile Cards */}
             <div className='md:hidden space-y-4'>
               {volunteers.map((volunteer, index) => (
                 <div key={index} className='iit-card p-4'>
                   <div className='flex items-center justify-between mb-2'>
                     <span className='font-semibold text-iit-blue'>{volunteer.name}</span>
-                    {/* <span className='text-xs text-iit-blue/60'>{volunteer.role}</span> */}
                   </div>
                   <div className='flex items-center justify-between'>
                     <span className='text-sm text-iit-blue/80'>{volunteer.phone}</span>
-                    {/* <span className='text-xs text-iit-blue/60'>{volunteer.role}</span> */}
                   </div>
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
 
           {/* Officials Contact */}
           <div>
