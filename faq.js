@@ -24,11 +24,7 @@ const faqs = [
     answer:
       "No food will be provided during the Induction Program. However, refreshments will be available. Students are expected to take their meals in their respective halls of residence.",
   },
-  {
-    question: "How can I contact volunteers or get help during the program?",
-    answer:
-      "Volunteers will be available at key venues and help desks throughout the program. You can also reach out via the help desk at induction2025@iitkgp.ac.in or call +91 3222 282030 during the program hours.",
-  },
+
   {
     question: "Can parents attend the Induction Program?",
     answer:
@@ -42,7 +38,7 @@ const faqs = [
   {
     question: "How do I access campus WiFi and other facilities?",
     answer:
-      "Instructions for accessing campus WiFi and other student facilities will be provided during the Induction Program. You will receive your credentials and guidelines as part of the orientation process.",
+      "Instructions for accessing campus WiFi and other student facilities can be found at https://cic.iitkgp.ac.in/?q=Wi-Fi%20Authentication",
   },
   {
     question: "How can I join student societies?",
@@ -50,24 +46,17 @@ const faqs = [
       "Each society has its own selection timelines. You should follow their respective social media handles to get updates and then register for them when the process opens.",
   },
   {
-    question: "What support services are available for mental health and counseling?",
+    question:
+      "What support services are available for mental health and counseling?",
     answer:
-      "There is a dedicated Counseling Center at IIT Kharagpur where you can visit and consult with experts. The 'Your Dost' platform is also available for online support.",
+      "There is a dedicated counselling center, SARTH at IIT Kharagpur where you can visit and consult with experts. The 'Your Dost' platform is also available for online support.",
   },
+
   {
-    question: "Is there a dress code for the Induction Program events?",
-    answer:
-      "There is no strict dress code, but decent clothing is expected. Shorts and half-pants are generally not allowed.",
-  },
-  {
-    question: "Where can I find information about hostel allocation and facilities?",
+    question:
+      "Where can I find information about hostel allocation and facilities?",
     answer:
       "Boys have to report at Lal Bahadur Sastri Hall of Residence (LBS) and girls at Sister Nivedita Hall (SNVH). The hall management staff at these locations will guide you regarding hostel allocation and facilities.",
-  },
-  {
-    question: "What should I do in case of a medical emergency during the program?",
-    answer:
-      "There is a BC Roy Technology Hospital located within the IIT Kharagpur campus, equipped to handle medical situations for students and staff.",
   },
   {
     question: "Are there medical facilities available on campus?",
