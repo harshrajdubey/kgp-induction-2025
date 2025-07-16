@@ -1,4 +1,7 @@
 import { Mail, Phone, Clock, MapPin, User, Shield } from "lucide-react";
+import praneethImg from "@/assets/Praneeth.jpg";
+import tanushImg from "@/assets/Tanush.jpg";
+import dnyaneshwariImg from "@/assets/Dnyaneshwari.jpg";
 
 const ContactSection = () => {
   const volunteers = [
@@ -23,23 +26,26 @@ const ContactSection = () => {
       name: "Sudhagani Praneeth Kumar",
       email: "vptsg@hijli.iitkgp.ac.in",
       phone: "+91 7416449233",
+      photo: praneethImg,
     },
     {
       title: "General Secretary, Student Welfare",
       name: "Tanush Agarwal",
       email: "gsectsg-welfare@hijli.iitkgp.ac.in",
       phone: "+91 8309300581",
+      photo: tanushImg,
     },
     {
       title: "General Secretary, Student Welfare",
       name: "Dnyaneshwari Ghare",
       email: "gsectsg-welfare@hijli.iitkgp.ac.in",
       phone: "+91 7499306778",
+      photo: dnyaneshwariImg,
     },
   ];
 
   return (
-    <section id='contact' className='py-16 bg-background'>
+    <section id='contact' className='py-16 bg-soft-blue'>
       <div className='container mx-auto px-6'>
         <div className='max-w-6xl mx-auto'>
           {/* Header */}
@@ -180,9 +186,9 @@ const ContactSection = () => {
             <div className='grid md:grid-cols-3 gap-6'>
               {officials.map((official, index) => (
                 <div key={index} className='iit-card p-6 text-center'>
-                  {/* Icon */}
-                  <div className='w-16 h-16 bg-iit-blue rounded-lg flex items-center justify-center mx-auto mb-4'>
-                    <User className='w-8 h-8 text-white' />
+                  {/* Official Photo */}
+                  <div className='w-24 h-24 md:w-32 md:h-32 rounded-lg overflow-hidden mx-auto mb-4'>
+                    <img src={official.photo} alt={official.name} className='object-cover w-full h-full' />
                   </div>
                   <h4 className=' font-bold text-iit-blue mb-2'>{official.name}</h4>
                   <p className='text-sm text-iit-blue/70 mb-4'>{official.title}</p>
