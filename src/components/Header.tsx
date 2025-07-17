@@ -5,7 +5,7 @@ import iitkgplogo from "@/assets/iitkgplogo.png"; // Adjust the path as necessar
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const menuItems = ["Home", "About", "Activities", "Schedule", "Links", "FAQ", "Contact"];
+  const menuItems = ["Home", "About", "Activities", "Schedule", "Resources", "FAQ", "Contact"];
 
   const scrollToSection = (sectionId: string) => {
     if (sectionId.toLowerCase() === "home") {

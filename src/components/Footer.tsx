@@ -133,8 +133,7 @@ const Footer = () => {
       <div className='bg-black/20 py-4'>
         <div className='container mx-auto px-6 text-center'>
           <p className='text-white text-base'>
-            Made with ❤️ for the Indian Institute of Technology Kharagpur Induction Program 2025<br></br>
-            Maintained by Devansh Soni & Daksh Yadav
+            Made with ❤️ by Tech Team, Technology Students' Gymkhana, IIT Kharagpur
           </p>
         </div>
       </div>

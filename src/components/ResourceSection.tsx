@@ -1,6 +1,6 @@
 import { FileText, Bus, Map, Globe, Users, BookOpen, Backpack, Heart, ExternalLink } from "lucide-react";
 
-const LinksSection = () => {
+const ResourceSection = () => {
   const links = [
     {
       icon: Users,
@@ -68,12 +68,12 @@ const LinksSection = () => {
   ];
 
   return (
-    <section id='links' className='py-16 bg-background'>
+    <section id='resources' className='py-16 bg-background'>
       <div className='container mx-auto px-6'>
         <div className='max-w-6xl mx-auto'>
           {/* Header */}
           <div className='text-center mb-12 animate-fade-in'>
-            <h2 className='text-3xl md:text-5xl font-heading font-bold text-iit-blue mb-6 uppercase'>Quick Links</h2>
+            <h2 className='text-3xl md:text-5xl font-heading font-bold text-iit-blue mb-6 uppercase'>Resources</h2>
             <p className='text-lg text-iit-blue/70 max-w-3xl mx-auto'>
               Essential resources and important links to help you navigate your journey at Indian Institute of
               Technology Kharagpur.
@@ -121,4 +121,4 @@ const LinksSection = () => {
   );
 };
 
-export default LinksSection;
+export default ResourceSection;
