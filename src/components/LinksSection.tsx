@@ -9,13 +9,13 @@ const LinksSection = () => {
       url: "https://gymkhana.iitkgp.ac.in/",
       color: "bg-primary",
     },
-    {
-      icon: FileText,
-      title: "Induction Handbook",
-      description: "Complete guide with all information about the induction program",
-      url: "#",
-      color: "bg-primary",
-    },
+    // {
+    //   icon: FileText,
+    //   title: "Induction Handbook",
+    //   description: "Complete guide with all information about the induction program",
+    //   url: "#",
+    //   color: "bg-primary",
+    // },
     {
       icon: Bus,
       title: "Bus Schedule",

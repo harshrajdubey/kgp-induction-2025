@@ -181,7 +181,7 @@ const ContactSection = () => {
 
           {/* Officials Contact */}
           <div>
-            <h3 className='text-2xl  font-bold text-iit-blue mb-6 text-center'>Key Officials</h3>
+            <h3 className='text-2xl  font-bold text-iit-blue mb-6 text-center'>Student Coordinators</h3>
 
             <div className='grid md:grid-cols-3 gap-6'>
               {officials.map((official, index) => (

@@ -97,10 +97,6 @@ const Footer = () => {
                 <p className='text-iit-gold font-semibold'>Program Venue</p>
                 <p className='text-white/80 text-sm'>Netaji Auditorium</p>
               </div>
-              <div>
-                <p className='text-iit-gold font-semibold'>Help Desk</p>
-                <p className='text-white/80 text-sm'>Available 24/7</p>
-              </div>
             </div>
           </div>
         </div>
