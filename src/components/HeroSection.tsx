@@ -14,6 +14,7 @@ const HeroSection = () => {
       <video
         className='absolute inset-0 w-full h-full object-cover'
         src='/iitkgpvideo1.webm'
+        poster='/iitkgpvideo1.webp'
         autoPlay
         loop
         muted
