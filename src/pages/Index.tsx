@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import CountdownSection from "@/components/CountdownSection";
+import RegistrationSection from "@/components/RegistrationSection";
 import AboutSection from "@/components/AboutSection";
 import DividerSection from "@/components/DividerSection";
 import AnnouncementsSection from "@/components/AnnouncementsSection";
@@ -30,6 +31,7 @@ const Index = () => {
       </div>
       <HeroSection />
       <CountdownSection />
+      <RegistrationSection />
       <AboutSection />
       <ActivitiesSection />
       <ScheduleSection />
