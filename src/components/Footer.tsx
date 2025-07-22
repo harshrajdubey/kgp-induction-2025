@@ -91,7 +91,7 @@ const Footer = () => {
             <div className='space-y-4'>
               <div>
                 <p className='text-iit-gold font-semibold'>Induction Program</p>
-                <p className='text-white/80 text-sm'>July 19-20, 2025</p>
+                <p className='text-white/80 text-sm'>July 25-28, 2025</p>
               </div>
               <div>
                 <p className='text-iit-gold font-semibold'>Program Venue</p>
