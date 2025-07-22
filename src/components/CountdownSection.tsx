@@ -11,8 +11,8 @@ const CountdownSection = () => {
   const [isExpired, setIsExpired] = useState(false);
 
   useEffect(() => {
-    // Set target date to July 19, 2025 at 09:00
-    const targetDate = new Date("2025-07-19T09:00:00").getTime();
+    // Set target date to July 25, 2025 at 09:00
+    const targetDate = new Date("2025-07-25T09:00:00").getTime();
     const timer = setInterval(() => {
       const now = new Date().getTime();
       const difference = targetDate - now;
@@ -54,7 +54,7 @@ const CountdownSection = () => {
           <p className='text-lg text-iit-blue/70 max-w-2xl mx-auto'>
             Get ready for an unforgettable experience at the Indian Institute of Technology Kharagpur.
           </p>
-          <p className='text-xl text-iit-primary font-bold text-center mt-2'>19th July 2025 09:00 AM</p>
+          <p className='text-xl text-iit-primary font-bold text-center mt-2'>25th July 2025 09:00 AM</p>
         </div>
 
         {/* Countdown Grid */}
