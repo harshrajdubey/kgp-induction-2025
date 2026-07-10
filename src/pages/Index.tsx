@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import CountdownSection from "@/components/CountdownSection";
+import RegistrationSection from "@/components/RegistrationSection";
 import AboutSection from "@/components/AboutSection";
 import DividerSection from "@/components/DividerSection";
 import AnnouncementsSection from "@/components/AnnouncementsSection";
@@ -25,11 +26,12 @@ const Index = () => {
           direction='left'
           scrollamount='7'
           className='text-white text-base font-semibold tracking-wide'>
-          Freshers must report to Netaji Auditorium by 9:00 AM on 19th July 2025 for the Welcome Ceremony.
+          Freshers must report to Netaji Auditorium by 9:00 AM on 25th July 2025 for the Welcome Ceremony.
         </marquee>
       </div>
       <HeroSection />
       <CountdownSection />
+      <RegistrationSection />
       <AboutSection />
       <ActivitiesSection />
       <ScheduleSection />

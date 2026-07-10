@@ -91,7 +91,7 @@ const Footer = () => {
             <div className='space-y-4'>
               <div>
                 <p className='text-iit-gold font-semibold'>Induction Program</p>
-                <p className='text-white/80 text-sm'>July 19-20, 2025</p>
+                <p className='text-white/80 text-sm'>July 25-28, 2025</p>
               </div>
               <div>
                 <p className='text-iit-gold font-semibold'>Program Venue</p>
@@ -133,6 +133,8 @@ const Footer = () => {
       <div className='bg-black/20 py-4'>
         <div className='container mx-auto px-6 text-center'>
           <p className='text-white text-base'>
+            {/* Made with ❤️ for the Indian Institute of Technology Kharagpur Induction Program 2025<br></br>
+            Maintained by Tech Team, Technology Students' Gymkhana, IIT Kharagpur */}
             Made with ❤️ by Tech Team, Technology Students' Gymkhana, IIT Kharagpur
           </p>
         </div>
